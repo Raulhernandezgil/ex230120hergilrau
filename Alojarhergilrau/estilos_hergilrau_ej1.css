@@ -1,0 +1,93 @@
+@charset "UTF-8";
+/* Ejerccio 3 */
+h1 {
+  text-align: center;
+}
+
+#imagenMarca_hergilrau {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+#imagenMarca2_hergilrau {
+  text-align: center;
+}
+
+.licencia_hergilrau {
+  display: block;
+  margin: auto;
+}
+
+header {
+  border: 3px dashed gold;
+}
+
+/* Ejercicio 4 */
+/* @import url("./estilosPadding_hergilraul_ej1.scss"); Seria así pero pongo el mixin en el mismo */
+.hergilraucontenedor {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  gap: 20px;
+  background-color: greenyellow;
+  padding: 20px;
+}
+
+.hergilrauContenedor2ConBordeAzul {
+  border: 1px solid blue;
+}
+
+.hergilrauContenedor1ConBordeVerde {
+  border: 1px solid green;
+  padding: 30px;
+  grid-column: 1/5;
+  display: block;
+  margin: auto;
+}
+
+.hergilrauContenedor2ConBordeAzul {
+  padding: 50px;
+}
+
+.boton_hergilrau {
+  display: block;
+  margin: auto;
+  background-image: url("./../Alojarhergilrau/Recursos/Recurso5.png");
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 100px;
+  background-position: center;
+}
+
+/* Ejercicio 5 */
+.contenedorFooter_hergilrau {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  grid-template-columns: 25% 50% 25%;
+  background-color: cadetblue;
+  padding: 10px;
+}
+.contenedorFooter_hergilrau > div {
+  background-color: chocolate;
+  border: 2px solid cornflowerblue;
+  padding: 10px;
+  text-align: center;
+}
+
+.boton2_hergilrau {
+  display: block;
+  margin: auto;
+  background-image: url("./../Alojarhergilrau/Recursos/Recurso6.png");
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 100px;
+  background-position: center;
+}
+
+.enlaceFooter_hergilrau {
+  align-content: center;
+}
+
+/*# sourceMappingURL=estilos_hergilrau_ej1.css.map */

@@ -1,0 +1,97 @@
+/* Ejerccio 3 */
+h1{
+    text-align: center;
+}
+#imagenMarca_hergilrau{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+#imagenMarca2_hergilrau{
+    text-align: center;
+}
+.licencia_hergilrau{
+    display: block;
+    margin: auto;
+}
+%bordeado_hergilrau{
+    border: 3px dashed gold;
+}
+header{
+    @extend %bordeado_hergilrau;
+}
+
+
+/* Ejercicio 4 */
+/* @import url("./estilosPadding_hergilraul_ej1.scss"); Seria así pero pongo el mixin en el mismo */
+@mixin paddingPersonalizado($padding) {
+    padding: $padding;
+}
+.hergilraucontenedor{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 20px;
+    background-color: greenyellow;
+    padding: 20px;
+}
+@mixin ConNordeVerde($pixel,$tipo,$color) {
+    border: $pixel $tipo $color;
+}
+%ConBordeAzul{
+    border: 1px solid blue;
+}
+
+.hergilrauContenedor1ConBordeVerde{
+    @include ConNordeVerde(1px,solid,green);
+    @include paddingPersonalizado(30px);
+    grid-column: 1/5;
+    display: block;
+    margin: auto;
+    
+}
+.hergilrauContenedor2ConBordeAzul{
+    @extend %ConBordeAzul;
+    @include paddingPersonalizado(50px);
+}
+
+.boton_hergilrau{
+    display: block;
+    margin: auto;
+    background-image:url("./../Alojarhergilrau/Recursos/Recurso5.png");
+    background-repeat:no-repeat;
+    height:100px;
+    width:100px;
+    background-position:center;
+}
+
+/* Ejercicio 5 */
+
+.contenedorFooter_hergilrau{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    grid-template-columns:25% 50% 25%;
+    background-color: cadetblue;
+    padding: 10px;
+    > div{
+        background-color: chocolate;
+        border: 2px solid cornflowerblue;
+        padding: 10px;
+        text-align: center;
+    }
+}
+
+.boton2_hergilrau{
+    display: block;
+    margin: auto;
+    background-image:url("./../Alojarhergilrau/Recursos/Recurso6.png");
+    background-repeat:no-repeat;
+    height:100px;
+    width:100px;
+    background-position:center;
+}
+.enlaceFooter_hergilrau{
+    align-content: center;
+}
+
